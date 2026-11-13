@@ -6,6 +6,7 @@ from rest_framework.exceptions import PermissionDenied
 from schools.models import Student
 from events.models import Event
 from registrations.models import Registration   # ✅ REQUIRED
+from rest_framework.parsers import MultiPartParser, FormParser
 
 from accounts.permissions import (
     IsTeacher, IsSchoolAdmin, IsJudge, IsAdmin
